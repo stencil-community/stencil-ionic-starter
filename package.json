@@ -1,0 +1,23 @@
+{
+  "name": "stencil-ionic-starter",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Stencil Ionic App Starter",
+  "scripts": {
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@ionic/core": "^6.1.14",
+    "@stencil/core": "^2.17.3",
+    "@types/jest": "^27.5.2",
+    "ionicons": "^6.0.2",
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1",
+    "puppeteer": "^16.2.0"
+  },
+  "license": "MIT"
+}
