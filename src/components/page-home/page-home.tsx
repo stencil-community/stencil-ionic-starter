@@ -1,4 +1,4 @@
-import { Component, Fragment, h, State } from '@stencil/core';
+import { Component, Fragment, h, State } from '@stencil/core'
 
 @Component({
   tag: 'page-home',
@@ -40,7 +40,10 @@ export class PageHome {
         <ion-content class="ion-padding">
           <p>Welcome to Stencil App Starter.</p>
           <ion-list>
-            <ion-radio-group value={this.mode} onIonChange={e => this.setMode(e.detail.value)}>
+            <ion-radio-group
+              value={this.mode}
+              onIonChange={e => this.setMode(e.detail.value)}
+            >
               <ion-list-header>
                 <ion-label>Theme Mode</ion-label>
               </ion-list-header>
@@ -48,16 +51,13 @@ export class PageHome {
                 (Changing theme will reload the whole app.)
               </ion-note>
               <ion-item>
-                <ion-label>Auto Detect</ion-label>
-                <ion-radio value='auto'></ion-radio>
+                <ion-radio value="auto">Auto Detect</ion-radio>
               </ion-item>
               <ion-item>
-                <ion-label>Material Design</ion-label>
-                <ion-radio value='md'></ion-radio>
+                <ion-radio value="md">Material Design</ion-radio>
               </ion-item>
               <ion-item>
-                <ion-label>iOS</ion-label>
-                <ion-radio value='ios'></ion-radio>
+                <ion-radio value="ios">iOS</ion-radio>
               </ion-item>
             </ion-radio-group>
           </ion-list>
@@ -72,7 +72,6 @@ export class PageHome {
           </ion-list>
         </ion-content>
       </Fragment>
-    );
+    )
   }
-
 }
